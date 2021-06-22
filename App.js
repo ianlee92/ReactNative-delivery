@@ -97,7 +97,8 @@ const styles = StyleSheet.create({
   },
   sectionTitle: {
     fontSize: 24,
-    fontWeight: '600',
+    // fontWeight: '600',
+    fontFamily: 'Montserrat-Bold',
   },
   sectionDescription: {
     marginTop: 8,
