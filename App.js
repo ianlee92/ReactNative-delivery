@@ -26,6 +26,8 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
+import colors from './assets/colors/colors';
+
 const Section = ({children, title}): Node => {
   const isDarkMode = useColorScheme() === 'dark';
   return (
@@ -97,7 +99,7 @@ const styles = StyleSheet.create({
   },
   sectionTitle: {
     fontSize: 24,
-    // fontWeight: '600',
+    color: colors.secondary,
     fontFamily: 'Montserrat-Bold',
   },
   sectionDescription: {
