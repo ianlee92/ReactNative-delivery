@@ -6,3 +6,6 @@ https://mehrankhandev.medium.com/ultimate-guide-to-use-custom-fonts-in-react-nat
 
 - react native vector icons  
 https://github.com/oblador/react-native-vector-icons
+
+- react native navigation  
+https://reactnavigation.org/
