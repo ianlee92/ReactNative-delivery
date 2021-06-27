@@ -7,8 +7,8 @@ const categoriesData = [
   },
   {
     id: 2,
-    image: require('../images/shrimp-icon.png'),
-    title: 'Seafood',
+    image: require('../images/cheese-icon.png'),
+    title: 'Cheese',
     selected: false,
   },
   {
