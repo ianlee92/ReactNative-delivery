@@ -1,10 +1,17 @@
 import * as React from 'react';
-import {SafeAreaView, Text, Image, StyleSheet, View} from 'react-native';
+import {
+  SafeAreaView,
+  Text,
+  Image,
+  StyleSheet,
+  View,
+  TouchableOpacity,
+} from 'react-native';
 import Feather from 'react-native-vector-icons/Feather';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import colors from '../assets/colors/colors';
 
-export default Details = ({route}) => {
+export default Details = ({route, navigation}) => {
   const {item} = route.params;
   console.log(item);
 
@@ -13,9 +20,11 @@ export default Details = ({route}) => {
       {/* Header */}
       <SafeAreaView>
         <View style={styles.headerWrapper}>
-          <View style={styles.headerLeft}>
-            <Feather name="chevron-left" size={12} color={colors.textDark} />
-          </View>
+          <TouchableOpacity onPress={() => navigation.goBack()}>
+            <View style={styles.headerLeft}>
+              <Feather name="chevron-left" size={12} color={colors.textDark} />
+            </View>
+          </TouchableOpacity>
           <View style={styles.headerRight}>
             <MaterialCommunityIcons
               name="star"
