@@ -9,14 +9,14 @@ const popularData = [
   {
     id: 2,
     image: require('../images/pizza2.png'),
-    title: 'Vegetarian Pizza',
-    weight: '450 gr',
+    title: 'Meatball Pizza',
+    weight: '600 gr',
     rating: '4.0',
   },
   {
     id: 3,
     image: require('../images/pizza3.png'),
-    title: 'Pepperoni Pizza',
+    title: 'Bulgogi Pizza',
     weight: '700 gr',
     rating: '5.0',
   },

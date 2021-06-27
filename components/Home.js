@@ -39,7 +39,7 @@ export default Home = () => {
           ]}>
           <Feather
             name="chevron-right"
-            size={8}
+            size={10}
             style={styles.categorySelectIcon}
             color={item.selected ? colors.black : colors.white}
           />
@@ -121,7 +121,7 @@ export default Home = () => {
                 </View>
                 <View style={styles.popularCardBottom}>
                   <View style={styles.addPizzaButton}>
-                    <Feather name="plus" size={10} color={colors.textDark} />
+                    <Feather name="plus" size={12} color={colors.textDark} />
                   </View>
                   <View style={styles.ratingWrapper}>
                     <MaterialCommunityIcons
@@ -204,12 +204,19 @@ const styles = StyleSheet.create({
   categoriesListWrapper: {
     paddingTop: 15,
     paddingBottom: 20,
-    paddingHorizontal: 20,
   },
   categoryItemWrapper: {
     backgroundColor: '#F5CA48',
     marginRight: 20,
     borderRadius: 20,
+    shadowColor: colors.black,
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.05,
+    shadowRadius: 10,
+    elevation: 2,
   },
   categoryItemImage: {
     width: 60,
@@ -250,6 +257,14 @@ const styles = StyleSheet.create({
     paddingLeft: 20,
     flexDirection: 'row',
     overflow: 'hidden',
+    shadowColor: colors.black,
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.05,
+    shadowRadius: 10,
+    elevation: 2,
   },
   popularTopWrapper: {
     flexDirection: 'row',
