@@ -34,6 +34,16 @@ export default Details = ({route, navigation}) => {
           </View>
         </View>
       </SafeAreaView>
+
+      {/* Titles */}
+      <View style={styles.titlesWrapper}>
+        <Text style={styles.title}>{item.title}</Text>
+      </View>
+
+      {/* Price */}
+      <View style={styles.priceWrapper}>
+        <Text style={styles.priceText}>${item.price}</Text>
+      </View>
     </View>
   );
 };
@@ -61,5 +71,24 @@ const styles = new StyleSheet.create({
     borderRadius: 10,
     borderColor: colors.primary,
     borderWidth: 2,
+  },
+  titlesWrapper: {
+    paddingHorizontal: 20,
+    marginTop: 30,
+  },
+  title: {
+    fontFamily: 'Montserrat-Bold',
+    fontSize: 32,
+    color: colors.textDark,
+    width: '50%',
+  },
+  priceWrapper: {
+    marginTop: 20,
+    paddingHorizontal: 20,
+  },
+  priceText: {
+    color: colors.price,
+    fontFamily: 'Montserrat-Bold',
+    fontSize: 32,
   },
 });
