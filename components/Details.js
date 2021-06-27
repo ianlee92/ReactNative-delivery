@@ -95,6 +95,14 @@ export default Details = ({route, navigation}) => {
           />
         </View>
       </View>
+
+      {/*  Place an order */}
+      <TouchableOpacity onPress={() => alert('Your order has been placed!')}>
+        <View style={styles.orderWrapper}>
+          <Text style={styles.orderText}>Place an order</Text>
+          <Feather name="chevron-right" size={18} color={colors.black} />
+        </View>
+      </TouchableOpacity>
     </View>
   );
 };
@@ -143,7 +151,7 @@ const styles = new StyleSheet.create({
     fontSize: 32,
   },
   infoWrapper: {
-    marginTop: 60,
+    marginTop: 30,
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
@@ -202,5 +210,20 @@ const styles = new StyleSheet.create({
     resizeMode: 'contain',
     width: 80,
     height: 80,
+  },
+  orderWrapper: {
+    marginTop: 30,
+    marginHorizontal: 20,
+    backgroundColor: colors.primary,
+    borderRadius: 50,
+    paddingVertical: 25,
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  orderText: {
+    fontFamily: 'Montserrat-Bold',
+    fontSize: 14,
+    marginRight: 10,
   },
 });
