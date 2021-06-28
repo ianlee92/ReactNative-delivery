@@ -12,5 +12,5 @@ https://oblador.github.io/react-native-vector-icons/
 - react native navigation  
 https://reactnavigation.org/  
 
-- react native flatlist
+- react native flatlist  
 https://reactnative.dev/docs/flatlist
